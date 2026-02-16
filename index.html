@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erfbelastings Formulier</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="main.js" defer></script>
 </head>
+
 <body>
+
+    <head>
+
+    </head>
+
+    <body>
+        <form action="">
+
+            <!-- gegevens overledene - vraag 1 pdf-->
+            <fieldset id="gegevensOverledenene">
+                <legend>Gegevens van de overledene</legend>
+
+                <fieldset>
+                    <legend>Volledige naam</legend>
+                    <label>
+                        Voorletter(s)
+                        <input type="text">
+                    </label>
+                    <label>
+                        tussenvoegsel(s)
+                        <input type="text">
+                    </label>
+                    <label>
+                        Achternaam
+                        <input type="text">
+                    </label>
+                </fieldset>
+
+                <label>
+                    Bsn overledene
+                    <input type="number">
+                </label>
+                <label>
+                    Overlijdingsdatum
+                    <input type="date">
+                </label>
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Partner van de overledene</legend>
+                <!-- vraag 1b | a -->
+                <fieldset>
+                    <legend> Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment
+                        van overlijden?
+                    </legend>
+                    <label>
+                        Ja
+                        <input type="radio">
+                    </label>
+                    <label>
+                        Nee (ga verder met vraag 1c)
+                        <input type="radio">
+                    </label>
+                </fieldset>
+
+                <!-- vraag 1b | b -->
+                <fieldset>
+                    <legend> Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of
+                        partnerschapsvoorwaarden laten vastleggenin een notariële akte?
+                    </legend>
+                    <label>
+                        Ja ( stuur een kopie van de akte mee met de aangifte)
+                        <input type="radio">
+                    </label>
+                    <label>
+                        Nee ( ga verder met vraag c1)
+                        <input type="radio">
+                    </label>
+                </fieldset>
+
+                <!-- vraag 1b | c -->
+                <fieldset>
+                    <legend> Hadden de overledene en diens partner een finaal verrekenbeding?
+                    </legend>
+                    <label>
+                        Ja
+                        <input type="radio">
+                    </label>
+                    <label>
+                        Nee
+                        <input type="radio">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>KIinderen van de overledene</legend>
+
+                    <!-- vraag 1c | a -->
+                    <fieldset>
+                        <legend> Had de overledene kinderen?
+                        </legend>
+                        <label>
+                            Ja
+                            <input type="radio">
+                        </label>
+                        <label>
+                            Nee ( ga verder met vraag 1d)
+                            <input type="radio">
+                        </label>
+                    </fieldset>
+
+                    <!-- vraag 1c | b -->
+                    <fieldset>
+                        <legend> Is 1 van deze kinderen eerder overleden dan de overledene voor wie nu aangifte doet?
+                        </legend>
+                        <label>
+                            Ja
+                            <input type="radio">
+                        </label>
+                        <label>
+                            Nee ( ga verder met vraag 1d)
+                            <input type="radio">
+                        </label>
+                    </fieldset>
+
+                    <!-- vraag 1c | c -->
+                    <fieldset>
+                        <legend> Had dit overleden kind zelf kinderen?
+                        </legend>
+                        <label>
+                            Ja
+                            <input type="radio">
+                        </label>
+                        <label>
+                            Nee
+                            <input type="radio">
+                        </label>
+                    </fieldset>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Testament van de overledene</legend>
+                    <label>
+                        Protocolnummer notaris
+                        <input type="number">
+                    </label>
+
+                    <fieldset>
+                        <legend>Volledige naam</legend>
+                        <label>
+                            Voorletter(s)
+                            <input type="text">
+                        </label>
+                        <label>
+                            tussenvoegsel(s)
+                            <input type="text">
+                        </label>
+                        <label>
+                            Achternaam
+                            <input type="text">
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        Vestigingsplaats
+                        <input type="text">
+                    </label>
+
+                    <label>
+                        Datum van het testament of van de laatste wijziging
+                        <input type="text">
+                    </label>
+
+                </fieldset>
+
+            </fieldset>
+
+
+        </form>
+    </body>
     
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
