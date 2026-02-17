@@ -48,6 +48,28 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 -repo toevoegen aan files en deployen
 - read me cleanen
 
+### Dinsdag 17 feb
+
+#### Wat heb ik vandaag gedaan?
+- **09:30–10:15** — Weekly geek
+- **10:30-11:50** - Workshop html forms
+12-10 - 
+
+
+to do:
+GitHub repo
+img aanpassen oude opdracht
+html opzetten
+alles groeperen en nadenken over de ux
+vormgeving doen
+
+
+stappen
+
+repo deployen enzo
+vraag 1 nog beter opzetten in html
+dan styling dan verder
+
 
 
 ### vormgeving types
