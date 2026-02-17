@@ -20,7 +20,7 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 
 ## Dagelijkse check-out
 
-### Maandag 16 feb
+### Maandag 16 feb | checkout met: Lynn
 
 #### Wat heb ik vandaag gedaan?
 - **09:30–11:30** — Kick-off / hoorcollege  
@@ -48,12 +48,33 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 -repo toevoegen aan files en deployen
 - read me cleanen
 
-### Dinsdag 17 feb
+### Dinsdag 17 feb | checkout met: Julius
 
 #### Wat heb ik vandaag gedaan?
-- **09:30–10:15** — Weekly geek
-- **10:30-11:50** - Workshop html forms
-12-10 - 
+- **09:30–10:15** — Weekly Geek  
+- **10:30–11:50** — Workshop HTML Forms  
+- **12:10–12:30** — Repository gedeployed en in Excel gezet (Dit had wat problemen dus medestudent om hulp gevraagd)  
+- **12:30–13:00** — Naamgeving in HTML toegepast (for-, name-attributen e.d.)  
+- **13:00–13:30** — Pauze  
+- **13:30–14:45** — Voor oude minor wat werkzaamheden gedaan
+- **14:50–15:40** — Naamgeving waarmee ik was begonnen overal toegepast/afgemaakt 
+- **15:40–15:50** — Feedback gevraagd op naamgeving via ChatGPT en consistentie gecontroleerd  
+- **15:50–16:00** — README bijgewerkt  
+
+#### Wat heb ik geleerd?
+- 3 nieuwe shortcuts    -> cmd + d/k | multiple smart selections (weet niet hoe ik dit moet beschrijven)
+                        -> shift + alt + f | format code neatly
+                        -> alt + pijlje omhoog/omlaag | regel code 1 omhoog of omlaag
+- Name en for enzo goed toepassen
+- Naamgeving consistenter en duidelijker toepassen
+- dataList element van html
+
+
+#### Wat ga ik volgende week doen?
+- Feedback vragen aan docenten over mijn  html en dan vooral de naamgeving die ik nu heb
+- basis styling opzetten
+- dan verder met de html verbeteren en een concept opzetten voor het hiden enzo van de niet relevante vragen
+- alle notities centraal zetten in obsidian en doornemen
 
 
 to do:
@@ -69,6 +90,12 @@ stappen
 repo deployen enzo
 vraag 1 nog beter opzetten in html
 dan styling dan verder
+
+### id dingen (naam vergeten)
+- overledene = xx
+- notaris = nt
+- partner = pn
+
 
 
 

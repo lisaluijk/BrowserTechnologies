@@ -1,8 +1,10 @@
 
-fieldset {
-    margin: 2rem;
+h1 {
+    padding: 1rem;
+    background-color: red;
+    color: white;
 }
 
-label {
-    
+fieldset {
+    margin: 2rem;
 }
