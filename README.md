@@ -62,9 +62,10 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 - **15:50–16:00** — README bijgewerkt  
 
 #### Wat heb ik geleerd?
-- 3 nieuwe shortcuts    -> cmd + d/k | multiple smart selections (weet niet hoe ik dit moet beschrijven)
-                        -> shift + alt + f | format code neatly
-                        -> alt + pijlje omhoog/omlaag | regel code 1 omhoog of omlaag
+- 3 nieuwe shortcuts    
+    - cmd + d/k | multiple smart selections (weet niet hoe ik dit moet beschrijven)
+    - shift + alt + f | format code neatly
+    -alt + pijlje omhoog/omlaag | regel code 1 omhoog of omlaag
 - Name en for enzo goed toepassen
 - Naamgeving consistenter en duidelijker toepassen
 - dataList element van html
@@ -76,27 +77,35 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 - dan verder met de html verbeteren en een concept opzetten voor het hiden enzo van de niet relevante vragen
 - alle notities centraal zetten in obsidian en doornemen
 
+## Weekly check-out | week 1 
+Ik heb denk ik al een stabiele html basis opgezet. Ik vind het jammer dat ik nog niet aan de styling ben toegekomen maar dat kwam ook omdat er nog iets van mijn oude minor tussen kwam deze week. Ik heb me erg veel bezig gehouden met de structuur en naamgeving van mijn html en kijk ernaar uit om daarop verder te werken en styling toe te gaan passen.
 
-to do:
-GitHub repo
-img aanpassen oude opdracht
-html opzetten
-alles groeperen en nadenken over de ux
-vormgeving doen
+### Leerdoel 1 – CSS-animaties & micro-animaties
+Nog niet van toepassing deze week. Ik wil wel proberen veel microanimaties toe te passen in mijn form 
+
+### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Hier ben ik deze week zeker mee bezig geweest. Ik heb veel nagedacht over nesten, groeperen en naamgeving en ik wil daar zeker mee door bij deze opdracht.
+Ik ben ik echt bezig met shortcuts aanleren en gaat dit tot nu toe best wel heel lekker.
+
+Ook heb ik het concept prefixes geleerd van Vasilis en toegepast in mijn code. 
+
+### Leerdoel 3 – Itereren binnen het ontwerpproces
+Dit leerdoel is binnen dit project nog niet sterk van toepassing en speelt een minder grote rol. Toch wil ik hier bewust aandacht aan blijven besteden. Ik doe dit door open te staan voor ontwerpkeuzes die niet volledig vastliggen binnen de huisstijl van NS die we gebruiken. En die ik dus vrij kan invullen. Bijvoorbeeld microanimaties.  
+
+Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ontwerp wil ik gaandeweg blijven verfijnen en verder uitbouwen. In plaats van in één keer een perfect ontwerp neer te zetten, focus ik mij op het verbeteren van het ontwerp door middel van bijschaving op basis van feedback en testen.
+
+### Wat wil ik volgende week doen
+- Code voorleggen aan de docent en vragen om feedback omdat ik nog niet helemaal tevreden ben met de naamgeving
+- Basis styling toepassen
+- Vraag 1 verbeteren
+- Vraag 2 maken 
+- Nadenken over de progressive disclosure
 
 
-stappen
-
-repo deployen enzo
-vraag 1 nog beter opzetten in html
-dan styling dan verder
-
-### id dingen (naam vergeten)
+### Prefixes tot nu toe:
 - overledene = xx
 - notaris = nt
 - partner = pn
-
-
 
 
 ### vormgeving types
