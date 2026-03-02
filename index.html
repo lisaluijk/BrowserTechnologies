@@ -23,11 +23,11 @@
             <!-- MARK: Data deceased person - question 1 form-->
             <!-- Deceased = xx_[varname] -->
             <fieldset id="data_deceased">
-                <legend for="data_deceased">Gegevens van de overledene</legend>
+                <legend>Gegevens van de overledene</legend>
 
                 <!-- Full name -->
                 <fieldset id="xx_fullName">
-                    <legend for="xx_fullName">Volledige naam</legend>
+                    <legend>Volledige naam</legend>
                     <label for="xx_fristnm">
                         Voorletter(s)
                         <input type="text" id="xx_fristnm" name="overledene_voornaam">
@@ -58,14 +58,14 @@
             <!-- MARK: Partner of deceased -->
             <!-- Partner = pn_[varname] -->
             <fieldset id="data_partner">
-                <legend for="data_partner">Partner van de overledene</legend>
+                <legend>Partner van de overledene</legend>
                 <!-- Question 1b | a -->
                 <fieldset id="Q_pn_maritalStatus">
-                    <legend for="Q_pn_maritalStatus"> Was de overledene getrouwd of had de overledene een
+                    <legend> Was de overledene getrouwd of had de overledene een
                         geregistreerde partner op het moment
                         van overlijden?
                     </legend>
-                    <label for="Apn_maritalStatus_true">
+                    <label for="A_pn_maritalStatus_true">
                         <input type="radio" id="A_pn_maritalStatus_true" name="overledene_huwelijks_situatie"
                             value="Ja">
                         Ja
@@ -79,7 +79,7 @@
 
                 <!-- Question 1b | b -->
                 <fieldset id="Q_pn_notarialCertificate">
-                    <legend for="Q_pn_notarialCertificate"> Hadden de overledene en diens echtgenoot of geregistreerde
+                    <legend> Hadden de overledene en diens echtgenoot of geregistreerde
                         partner huwelijkse of
                         partnerschapsvoorwaarden laten vastleggenin een notariële akte?
                     </legend>
@@ -97,7 +97,7 @@
 
                 <!-- vraag 1b | c -->
                 <fieldset id="Q_pn_finalSettlementClause">
-                    <legend for="Q_pn_finalSettlementClause"> Hadden de overledene en diens partner een finaal
+                    <legend> Hadden de overledene en diens partner een finaal
                         verrekenbeding?
                     </legend>
                     <label for="A_pn_finalSettlementClause_true">
@@ -116,11 +116,11 @@
                 <!-- MARK: Children of deceased -->
                 <!-- Children = ch_[varname] -->
                 <fieldset id="data_children">
-                    <legend for="data_children">KIinderen van de overledene</legend>
+                    <legend>KIinderen van de overledene</legend>
 
                     <!-- vraag 1c | a -->
                     <fieldset id="Q_ch_children">
-                        <legend for="Q_ch_children"> Had de overledene kinderen?
+                        <legend> Had de overledene kinderen?
                         </legend>
                         <label for="A_ch_children">
                             <input type="radio" id="A_ch_children_true" name="overledene_kinderen" value="Ja">
@@ -134,7 +134,7 @@
 
                     <!-- vraag 1c | b -->
                     <fieldset id="Q_ch_passedAway">
-                        <legend for="Q_ch_passedAway"> Is 1 van deze kinderen eerder overleden dan de overledene voor
+                        <legend> Is 1 van deze kinderen eerder overleden dan de overledene voor
                             wie nu aangifte doet?
                         </legend>
                         <label for="A_ch_passedAway_true">
@@ -151,7 +151,7 @@
 
                     <!-- vraag 1c | c -->
                     <fieldset id="Q_ch_grandchildren">
-                        <legend for="Q_ch_grandchildren"> Had dit overleden kind zelf kinderen?
+                        <legend> Had dit overleden kind zelf kinderen?
                         </legend>
                         <label for="A_ch_grandchildren_true">
                             <input type="radio" id="A_ch_grandchildren_true" name="overledene_kleinkinderen" value="Ja">
@@ -168,10 +168,10 @@
                 <!-- MARK: Will of deceased -->
                 <!-- Will = wl_[varname] -->
                 <fieldset id="data_will">
-                    <legend for="data_will">Testament van de overledene</legend>
+                    <legend>Testament van de overledene</legend>
 
                     <fieldset id="Q_wl_will">
-                        <legend for="Q_wl_will"> Had de overledene een testament?
+                        <legend> Had de overledene een testament?
                         </legend>
                         <label for="A_wl_will_true">
                             <input type="radio" id="A_wl_will_true" name="overledene_testament" value="Ja">
@@ -188,14 +188,14 @@
                     <!-- Notary of deceased -->
                     <!-- Notary = nt_[varname] -->
                     <fieldset id="data_notary">
-                        <legend for="data_notary">Gegevens van notaris</legend>
+                        <legend>Gegevens van notaris</legend>
                         <label for="nt_protocolNmb">
                             Protocolnummer notaris
                             <input type="number" id="nt_protocolNmb" name="notaris_protocolnummer">
                         </label>
 
                         <fieldset id="nt_fullName">
-                            <legend for="nt_fullName">Volledige naam</legend>
+                            <legend>Volledige naam</legend>
                             <label for="nt_fullName">
                                 Voorletter(s)
                                 <input type="text" id="nt_fullName" name="notaris_voornaam">
@@ -225,7 +225,7 @@
 
             </fieldset>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Formulier verzenden</button>
 
 
         </form>

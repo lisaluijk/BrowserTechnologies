@@ -1,3 +1,7 @@
+>[!Caution]
+> THIS IS A SCHOOlPROJECT
+
+
 # Leerdoelen
 
 ### Leerdoel 1 – CSS-animaties & micro-animaties
@@ -70,7 +74,6 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 - Naamgeving consistenter en duidelijker toepassen
 - dataList element van html
 
-
 #### Wat ga ik volgende week doen?
 - Feedback vragen aan docenten over mijn  html en dan vooral de naamgeving die ik nu heb
 - basis styling opzetten
@@ -94,6 +97,16 @@ Dit leerdoel is binnen dit project nog niet sterk van toepassing en speelt een m
 
 Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ontwerp wil ik gaandeweg blijven verfijnen en verder uitbouwen. In plaats van in één keer een perfect ontwerp neer te zetten, focus ik mij op het verbeteren van het ontwerp door middel van bijschaving op basis van feedback en testen.
 
+### Feedback van voortgangsgesprek
+-  + Opzich heb ik nu een mooie opzet voor mijn html, maar ik ben maybe wel een klein beetje doorgeslagen. 
+- - Een legend heeft geen form nodig. Let ook op dat je juist met zo'n ingewikkeld pattern je wel consistent blijft.
+- ! Denk alvast na over hoe je alles gaat oplossen met required omdat dit afhangt van antwoorden op vragen
+- ! Begin zo snel mogelijk aan de javascript (het lastige), voordat je je gaat storten op de styling
+- ! Je kan je verdiepen in password manager en dat je al data ophaalt voor de gebruiker
+- ! Auto complete ^, kijk daarnaar
+- ! Denk na over een max date -> je kan kijken naar voor wanneer dir formulier is
+-  
+
 ### Wat wil ik volgende week doen
 - Code voorleggen aan de docent en vragen om feedback omdat ik nog niet helemaal tevreden ben met de naamgeving
 - Basis styling toepassen
@@ -102,10 +115,43 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 - Nadenken over de progressive disclosure
 
 
+### Maandag 02 maart | checkout met:___
+
+#### Wat heb ik vandaag gedaan?
+
+9:30-1015 - kickoff en uitleg over validatie met javascript
+1030-1130 - workshop validatie met css
+11:35- plan maken voor vandaag en de feedback doornemen
+1150 -  
+
+
+plan 
+1. feedback fixen van vorige week
+2. styling toepassen
+3. progressive enhancement
+4. validatie in de meest basic vorm toepasse4n
+
+
+#### ideeën die ik nog wil toepassen
+- validation per fieldset met pop up of iets dergelijks
+- de box kan je stylen met js
+- naar de patterns kijken die ik wil doen (progressive disclosure. string voor postcode enzo, toevoegen van verkrijgers, de tekst informatie van dat andere document.) wiskunde voor iets ik weet niet meer wat
+- van alles hihihihihihi
+
+
+!bij notities even opletten dat obsidion en notitities staan ook op mkijn telefoon van vandaag!
+
+
+
+
+
 ### Prefixes tot nu toe:
 - overledene = xx
 - notaris = nt
 - partner = pn
+
+andere regels
+- 
 
 
 ### vormgeving types
