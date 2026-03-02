@@ -24,6 +24,9 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 
 ## Dagelijkse check-out
 
+<details>
+<summary>Dag 0</summary>
+
 ### Maandag 16 feb | checkout met: Lynn
 
 #### Wat heb ik vandaag gedaan?
@@ -52,6 +55,11 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 -repo toevoegen aan files en deployen
 - read me cleanen
 
+</details>
+
+<details>
+<summary>Dag 1</summary>
+
 ### Dinsdag 17 feb | checkout met: Julius
 
 #### Wat heb ik vandaag gedaan?
@@ -79,6 +87,8 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 - basis styling opzetten
 - dan verder met de html verbeteren en een concept opzetten voor het hiden enzo van de niet relevante vragen
 - alle notities centraal zetten in obsidian en doornemen
+
+</details>
 
 ## Weekly check-out | week 1 
 Ik heb denk ik al een stabiele html basis opgezet. Ik vind het jammer dat ik nog niet aan de styling ben toegekomen maar dat kwam ook omdat er nog iets van mijn oude minor tussen kwam deze week. Ik heb me erg veel bezig gehouden met de structuur en naamgeving van mijn html en kijk ernaar uit om daarop verder te werken en styling toe te gaan passen.
@@ -115,28 +125,48 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 - Vraag 2 maken 
 - Nadenken over de progressive disclosure
 
+<details>
+<summary>Dag 2</summary>
 
-### Maandag 02 maart | checkout met:___
+### Maandag 02 maart | checkout met: Julius
 
 #### Wat heb ik vandaag gedaan?
 
-9:30-1015 - kickoff en uitleg over validatie met javascript
-1030-1130 - workshop validatie met css
-11:35- plan maken voor vandaag en de feedback doornemen
-1150 - feedback verwerken door html consistenter te maken, Geen afkortingen meer, incosistentie hersteld, for bij legends weggehaald, kebab case nu voor de infixes en camelcase nu voor de variabele naam echt.
-12:00 - Begin styling doornemen ns [website](https://tractie.ns.nl/2e23992f3/p/8303aa-typography) en nog een andere [website](https://blue-water-08c39b403.5.azurestaticapps.net/?path=/docs/web-form--docs)
-12 10 pauze
-1300 uitleg weekly nerd
-1315 verder met styling bekijken
+- **09:30–10:15** — Kick-off en uitleg over validatie met JavaScript  
+- **10:30–11:30** — Workshop validatie met CSS  
+- **11:35–11:50** — Dagplanning gemaakt en feedback doorgenomen/uit mijn fysieke schrift digitaal opgeschreven 
+- **11:50–12:00** — Feedback verwerkt: HTML consistenter gemaakt, afkortingen verwijderd, inconsistenties hersteld, `for`-attributen bij legends weggehaald, kebab-case toegepast voor infixes en camelCase voor variabelen  
+- **12:00–12:10** — Styling doorgenomen aan de hand van de NS-styleguides
+  - [NS typography](https://tractie.ns.nl/2e23992f3/p/8303aa-typography)
+  - [Form reference](https://blue-water-08c39b403.5.azurestaticapps.net/?path=/docs/web-form--docs)  
+
+- **12:10–13:00** — Pauze  
+- **13:00–13:15** — Uitleg Weekly Nerd  
+- **13:15–14:00** — Fonts opgehaald en `.gitignore` ingesteld  
+- **14:00–14:50** — Color tags in de root gezet 
+- **14:50–15:10** — Padding en border-radius in de root gezet 
+- **15:10–16:00** — Met Teun naar Obsidian gekeken en begonnen met al mijn notities daar centraal te verzamelen.  
+- **16:00–16:15** — Check-out  
+- **na school** - De bronnen doorgenomen voor de weekly geek en de rest van de notities in obsidian gezet
 
 
+#### Wat heb ik geleerd?
+- Hoe ik forms kan valideren met css
+- weer opgefriste hoe ik de gitignore moet toepassen
 
-plan 
-1. feedback fixen van vorige week
-2. styling toepassen
-3. progressive enhancement
-4. validatie in de meest basic vorm toepasse4n
+#### Wat ga ik moergen doen?
+1. styling verder toepassen (ik wil dit hier niet de lang aanzitten dus wil de basis toepassen om dan zo snel mogelijk verder te gaan met de rest)
+2. progressive enhancement uitwerken
+3. validatie in de meest basic vorm toepasse4n
+4. Een readme opzetten met uitleg van mijn code, zodat ik hiermee kan oefenen
 
+</details>
+
+
+<details>
+<summary>Personal notes</summary>
+
+## Mijn eigen (nog ietwat rommilige) notes
 
 #### ideeën die ik nog wil toepassen
 - validation per fieldset met pop up of iets dergelijks
@@ -186,3 +216,5 @@ andere regels
     - postcoe
 
 datalist voor plaats voor nu doe ik tekst
+
+</details>
