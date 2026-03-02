@@ -123,7 +123,12 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 9:30-1015 - kickoff en uitleg over validatie met javascript
 1030-1130 - workshop validatie met css
 11:35- plan maken voor vandaag en de feedback doornemen
-1150 -  
+1150 - feedback verwerken door html consistenter te maken, Geen afkortingen meer, incosistentie hersteld, for bij legends weggehaald, kebab case nu voor de infixes en camelcase nu voor de variabele naam echt.
+12:00 - Begin styling doornemen ns [website](https://tractie.ns.nl/2e23992f3/p/8303aa-typography) en nog een andere [website](https://blue-water-08c39b403.5.azurestaticapps.net/?path=/docs/web-form--docs)
+12 10 pauze
+1300 uitleg weekly nerd
+1315 verder met styling bekijken
+
 
 
 plan 
