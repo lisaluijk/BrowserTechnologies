@@ -28,17 +28,17 @@
                 <!-- Full name -->
                 <fieldset id="xx_fullName">
                     <legend>Volledige naam</legend>
-                    <label for="xx_fristnm">
+                    <label for="xx_fristName">
                         Voorletter(s)
-                        <input type="text" id="xx_fristnm" name="overledene_voornaam">
+                        <input type="text" id="xx_fristName" name="overledene_voornaam">
                     </label>
                     <label for="xx_infix">
                         tussenvoegsel(s)
                         <input type="text" id="xx_infix" name="overledene_tussenvoegsel">
                     </label>
-                    <label for="xx_lastnm">
+                    <label for="xx_lastName">
                         Achternaam
-                        <input type="text" id="xx_lastnm" name="overledene_achternaam">
+                        <input type="text" id="xx_lastName" name="overledene_achternaam">
                     </label>
                 </fieldset>
 
@@ -47,9 +47,9 @@
                     <input type="number" id="xx_bsn" name="overledene_bsn">
                 </label>
 
-                <label for="xx_passingdate">
+                <label for="xx_passingDate">
                     Overlijdingsdatum
-                    <input type="date" id="xx_passingdate" name="overledene_overlijdingsdatum">
+                    <input type="date" id="xx_passingDate" name="overledene_overlijdingsdatum">
                 </label>
 
             </fieldset>
@@ -88,8 +88,8 @@
                             value="Ja">
                         Ja ( stuur een kopie van de akte mee met de aangifte)
                     </label>
-                    <label for="Q_pn_notarialCertificate_false">
-                        <input type="radio" id="Q_pn_notarialCertificate_false" name="overledene_notariele_akte"
+                    <label for="A_pn_notarialCertificate_false">
+                        <input type="radio" id="A_pn_notarialCertificate_false" name="overledene_notariele_akte"
                             value="Nee">
                         Nee ( ga verder met vraag c1)
                     </label>
@@ -122,7 +122,7 @@
                     <fieldset id="Q_ch_children">
                         <legend> Had de overledene kinderen?
                         </legend>
-                        <label for="A_ch_children">
+                        <label for="A_ch_children_true">
                             <input type="radio" id="A_ch_children_true" name="overledene_kinderen" value="Ja">
                             Ja
                         </label>
@@ -189,9 +189,9 @@
                     <!-- Notary = nt_[varname] -->
                     <fieldset id="data_notary">
                         <legend>Gegevens van notaris</legend>
-                        <label for="nt_protocolNmb">
+                        <label for="nt_protocolNumber">
                             Protocolnummer notaris
-                            <input type="number" id="nt_protocolNmb" name="notaris_protocolnummer">
+                            <input type="number" id="nt_protocolNumber" name="notaris_protocolnummer">
                         </label>
 
                         <fieldset id="nt_fullName">

@@ -105,7 +105,8 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 - ! Je kan je verdiepen in password manager en dat je al data ophaalt voor de gebruiker
 - ! Auto complete ^, kijk daarnaar
 - ! Denk na over een max date -> je kan kijken naar voor wanneer dir formulier is
--  
+- - Soms gebruik ik afkortingen en soms niet
+- -  camelCase en kebab_case door elkaar
 
 ### Wat wil ik volgende week doen
 - Code voorleggen aan de docent en vragen om feedback omdat ik nog niet helemaal tevreden ben met de naamgeving
