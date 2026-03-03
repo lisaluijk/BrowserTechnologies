@@ -14,21 +14,31 @@
 <body>
 
     <head>
-        <h2 class="warning" >Dit is een schoolproject!!!!!!!!</h1>
+        <h2 class="warning">Dit is een schoolproject!!!!!!!!</h1>
     </head>
 
     <body>
-        <h1>Formulier erfbelasting (2026) </h1>
+        <h1>Erfbelasting 2026 </h1>
+        <p>Met dit formulier doet u aangifte erfbelasting.</p>
+
+        <h3>Voor wie doet u aangifte?</h3>
+        <p>U doet aangifte erfbelasting voor alle personen of instellingen die iets krijgen uit de nalatenschap van de
+            overledene. In deze aangifte noemen wij dit 'Verkrijgers'. </p>
+
         <form action="">
 
             <!-- MARK: Data deceased person - question 1 form-->
             <!-- Deceased = xx_[varname] -->
             <fieldset id="data_deceased">
-                <legend>Gegevens van de overledene</legend>
+                <legend>
+                    <h3>Gegevens van de overledene </h3>
+                </legend>
 
                 <!-- Full name -->
                 <fieldset id="xx_fullName">
-                    <legend>Volledige naam</legend>
+                    <legend>
+                        <h4> Volledige naam </h4>
+                    </legend>
                     <label for="xx_fristName">
                         Voorletter(s)
                         <input type="text" id="xx_fristName" name="overledene_voornaam">
@@ -59,7 +69,9 @@
             <!-- MARK: Partner of deceased -->
             <!-- Partner = pn_[varname] -->
             <fieldset id="data_partner">
-                <legend>Partner van de overledene</legend>
+                <legend>
+                    <h3>Partner van de overledene</h3>
+                </legend>
                 <!-- Question 1b | a -->
                 <fieldset id="Q_pn_maritalStatus">
                     <legend> Was de overledene getrouwd of had de overledene een
@@ -117,7 +129,9 @@
                 <!-- MARK: Children of deceased -->
                 <!-- Children = ch_[varname] -->
                 <fieldset id="data_children">
-                    <legend>Kinderen van de overledene</legend>
+                    <legend>
+                        <h3> van de overledene</h3>
+                    </legend>
 
                     <!-- vraag 1c | a -->
                     <fieldset id="Q_ch_children">
@@ -169,7 +183,9 @@
                 <!-- MARK: Will of deceased -->
                 <!-- Will = wl_[varname] -->
                 <fieldset id="data_will">
-                    <legend>Testament van de overledene</legend>
+                    <legend>
+                        <h3>Testament van de overledene</h3>
+                    </legend>
 
                     <fieldset id="Q_wl_will">
                         <legend> Had de overledene een testament?

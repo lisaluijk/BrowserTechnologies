@@ -10,6 +10,7 @@
     --white: #ffffff;
     --black: #000000;
 
+    --gray-25: #F5F5F7;
     --gray-100: #e4e5e8;
     --gray-200: #d6d7dc;
     --gray-300: #c4c5cb;
@@ -78,6 +79,16 @@
     --color-background-brand-secondary: light-dark(var(--blue-700), var(--blue-300));
     --color-background-hover: light-dark(var(--alpha-black-500), var(--alpha-white-100));
     --color-background-input: light-dark(var(--white), var(--black));
+    --color-background-elevated-1: light-dark(var(--white), var(--gray-900));
+    --color-background-elevated-2: light-dark(var(--white), var(--gray-800));
+    --color-background-elevated-sunken: light-dark(var(--gray-25), var(--black));
+
+
+    /* shadows */
+    --shadow-elevated-1: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+    --shadow-elevated-2: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+
+
 
     /* MARK: padding and margin */
 
@@ -102,8 +113,8 @@
 
     /* padding*/
     /*hier kan ik nog een breakpoint toevoegen maar ga ik nu niet doen*/
-    --spacing-inset-xs: var(--spacing-spacer-2);
-    --spacing-inset-s: var(--spacing-spacer-3);
+    --spacing-inset-xs: var(--spacing-spacer-1);
+    --spacing-inset-s: var(--spacing-spacer-2);
     --spacing-inset-m: var(--spacing-spacer-4);
     --spacing-inset-l: var(--spacing-spacer-6);
 
@@ -207,22 +218,36 @@
 
 /* MARK: Basic styling */
 
+/* reset */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* list-style-type: none; */
+}
 
 
-/* stuling typography */
+/* styling typography */
 * {
     font-family: "nsSans", Arial, Helvetica, sans-serif;
     color: var(--color-content-default);
     font-size: var(--typography-size-m);
     line-height: var(--typography-line-height-l);
-    padding: var(--spacing-inset-m) 0;
+    padding: var(--spacing-inset-s);
     font-weight: var(--typography-weight-normal);
+
+}
+
+body {
+    background: var(--color-background-elevated-sunken);
 }
 
 h1 {
     font-size: var(--typography-size-xxxl);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-m);
+    padding-bottom: var(--spacing-inset-xs);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
@@ -237,7 +262,7 @@ h1 {
 h2 {
     font-size: var(--typography-size-xxl);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-m);
+    padding-bottom: var(--spacing-inset-xs);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
@@ -246,7 +271,7 @@ h2 {
 h3 {
     font-size: var(--typography-size-xl);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-m);
+    padding-bottom: var(--spacing-inset-xs);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
@@ -255,7 +280,7 @@ h3 {
 h4 {
     font-size: var(--typography-size-l);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-m);
+    padding-bottom: var(--spacing-inset-xs);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
@@ -264,7 +289,7 @@ h4 {
 h5 {
     font-size: var(--typography-size-m);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-m);
+    padding-bottom: var(--spacing-inset-xs);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
@@ -273,7 +298,7 @@ h5 {
 h6 {
     font-size: var(--typography-size-s);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-m);
+    padding-bottom: var(--spacing-inset-xs);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
@@ -309,12 +334,31 @@ button:hover {
     background-color: var(--color-content-interactive-hover);
 }
 
-button:active{
+button:active {
     background-color: var(--color-content-interactive-pressed);
 }
 
 
 /* MARK: form */
+
+form {
+    box-shadow: var(--shadow-elevated-1);
+    background: var(--color-background-elevated-1);
+
+    border-radius: var(--border-radius-l);
+    margin: var(--spacing-inset-l) var(--spacing-inset-m);
+}
+
+fieldset {
+    border-radius: var(--border-radius-m);
+    border: none;
+   
+}
+
+form > fieldset {
+    background: var(--color-background-elevated-2);
+    box-shadow: var(--shadow-elevated-2);
+}
 
 
 label {
@@ -346,10 +390,9 @@ input:focus {
     border-width: var(--border-width-medium);
 }
 
-fieldset:has(input[type="radio"]) {
-    color: hotpink;
+fieldset>:has(input[type="radio"]) {
+    background-color: hotpink;
 }
-
 
 
 
@@ -357,7 +400,6 @@ fieldset:has(input[type="radio"]) {
 fieldset {
     margin: 1rem;
 }
-
 
 
 
