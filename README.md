@@ -1,5 +1,5 @@
 >[!Caution]
-> THIS IS A SCHOOlPROJECT
+> THIS IS A SCHOOLPROJECT
 
 
 # Leerdoelen
@@ -108,15 +108,15 @@ Dit leerdoel is binnen dit project nog niet sterk van toepassing en speelt een m
 Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ontwerp wil ik gaandeweg blijven verfijnen en verder uitbouwen. In plaats van in één keer een perfect ontwerp neer te zetten, focus ik mij op het verbeteren van het ontwerp door middel van bijschaving op basis van feedback en testen.
 
 ### Feedback van voortgangsgesprek
--  + Opzich heb ik nu een mooie opzet voor mijn html, maar ik ben maybe wel een klein beetje doorgeslagen. 
-- - Een legend heeft geen form nodig. Let ook op dat je juist met zo'n ingewikkeld pattern je wel consistent blijft.
-- ! Denk alvast na over hoe je alles gaat oplossen met required omdat dit afhangt van antwoorden op vragen
-- ! Begin zo snel mogelijk aan de javascript (het lastige), voordat je je gaat storten op de styling
-- ! Je kan je verdiepen in password manager en dat je al data ophaalt voor de gebruiker
-- ! Auto complete ^, kijk daarnaar
-- ! Denk na over een max date -> je kan kijken naar voor wanneer dir formulier is
-- - Soms gebruik ik afkortingen en soms niet
-- -  camelCase en kebab_case door elkaar
+- /+ Opzich heb ik nu een mooie opzet voor mijn html, maar ik ben maybe wel een klein beetje doorgeslagen. 
+- /- Een legend heeft geen form nodig. Let ook op dat je juist met zo'n ingewikkeld pattern je wel consistent blijft.
+- /! Denk alvast na over hoe je alles gaat oplossen met required omdat dit afhangt van antwoorden op vragen
+- /! Begin zo snel mogelijk aan de javascript (het lastige), voordat je je gaat storten op de styling
+- /! Je kan je verdiepen in password manager en dat je al data ophaalt voor de gebruiker
+- /! Auto complete ^, kijk daarnaar
+- /! Denk na over een max date -> je kan kijken naar voor wanneer dir formulier is
+- /- Soms gebruik ik afkortingen en soms niet
+- /-  camelCase en kebab_case door elkaar
 
 ### Wat wil ik volgende week doen
 - Code voorleggen aan de docent en vragen om feedback omdat ik nog niet helemaal tevreden ben met de naamgeving
@@ -124,6 +124,8 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 - Vraag 1 verbeteren
 - Vraag 2 maken 
 - Nadenken over de progressive disclosure
+
+## Dagelijkse check-out
 
 <details>
 <summary>Dag 2</summary>
@@ -139,7 +141,6 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 - **12:00–12:10** — Styling doorgenomen aan de hand van de NS-styleguides
   - [NS typography](https://tractie.ns.nl/2e23992f3/p/8303aa-typography)
   - [Form reference](https://blue-water-08c39b403.5.azurestaticapps.net/?path=/docs/web-form--docs)  
-
 - **12:10–13:00** — Pauze  
 - **13:00–13:15** — Uitleg Weekly Nerd  
 - **13:15–14:00** — Fonts opgehaald en `.gitignore` ingesteld  
@@ -159,6 +160,38 @@ Daarnaast ben ik bezig met het ontwerpen van de opzet van het formulier. Dit ont
 2. progressive enhancement uitwerken
 3. validatie in de meest basic vorm toepasse4n
 4. Een readme opzetten met uitleg van mijn code, zodat ik hiermee kan oefenen
+
+</details>
+
+<details>
+<summary>Dag 3</summary>
+
+### Dinsdag 03 maart | checkout met: Senna
+
+#### Wat heb ik vandaag gedaan?
+- **09:30–10:30** — Weekly Geek  
+- **10:30–11:00** — Met Kerr gespart over de Rubiks kubus-opdracht en elkaar beter leren kennen  
+- **11:00–11:20** — Enkele dingen voor mijn werk moeten regelen
+- **11:20–11:30** — Kleine planning voor mezelf gemaakt
+- **11:30–12:00** — Styling tokens afgerond  
+- **12:00–12:30** — Begonnen met styling van typography en basiselementen voor form  
+- **12:30–13:20** — Pauze  
+- **13:20–14:30** — Verder met styling, met name form-elementen  
+- **14:30–15:00** — Koffiepauze  
+- **15:00–16:00** — Verder met styling van de elementen 
+- **16:00–16:15** — Daily check-out
+
+#### Wat heb ik geleerd?
+- Mediaqueries weer opgehaald
+- Vooral progressie gemaakt
+- Nog niet heel veel nieuwe dingen gedaan of uitgezocht
+
+#### Wat ga ik volgende keer doen?
+- Layout van de styling doen
+- progressive disclosure
+- validation 
+ 
+kijken naar typografie met font weigth medirum en sizing
 
 </details>
 
