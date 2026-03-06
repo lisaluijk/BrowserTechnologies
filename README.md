@@ -195,6 +195,48 @@ kijken naar typografie met font weigth medirum en sizing
 
 </details>
 
+vrijdag 6 maart 
+1430 feedback opschrijven
+1445 verder met code validatie klaarmaken voor html
+1615 tot dit html attributen toegepast voor goede validatie en rearch gedaan naar regex
+
+to do 
+met js toevoegen dat er ook alleen maar letters kunnen worden getypt geen nummers
+elf proof en styling bsn
+kijken  naar formatting aanpassen met shortcut of prettier
+nadenken over text of number en kijknennaar js daarvoor en dat er nullen voorkomen als er minder dingen zijn toegevoegdd
+vor plaatsen zon datalist doen
+met js datum van vandaag doen en maybe bij datum wijziging testament doen dat je niet later kan doen dan datum overleiden van persoon
+
+
+I asked chat for the patterns
+https://rapidtoolset.com/nl/tool/regex-explainer
+https://docs.validatar.com/docs/commonly-used-regex
+https://rapidtoolset.com/nl/tool/regex-explainer
+
+## Feedback
+- read me ook echt toevoegen welke keuzes je hebt gemaakt en waarom
+- Probeer dingen echt te hergebruiken enzo
+- nesten maybe
+- leidt de gebruiker echt aan de hand mee
+- probeer dingen altijd positief te benaderen ook met variabel namen dus niet :not(:has(blablabla))
+- ctrl shift p in console om js in inspecteren  uit te zetten
+- 
+
+persoonlijke feedback:
+- denkna over of ik het wil weglaten of wil laten zien met progressive disclodure. 
+- misschein ga ik er tijd bij zette 
+- alles opschrijven waar ik ove rna denk ook al heb i geen tijd gehad om het te implementeren of te testen maar schrijf dingen op en welke afwegingen in maak
+- van jeppe kijken naar pattern 
+- maybe nog css opsplitsen maar nu nog geen prio
+- beter prioriseren
+- en verder weet ik het echt niet meer even
+- nu al best goede styling
+- radiobuttons ja en nee buttons maken
+- kijk eerst of je dingen kan doen met wat ik al heb, hoef nog niet gelijk div's toe te voegen maar mocht het nodig zijn dan is dat wel de beste oplossing
+
+idee required en progressive enhancement
+in html wel alles required maken en dan ook al een value nee geven dat dan stylen alsof het nog niet ingevuld is zodat de gebruiker he tniet mist if you get what i mean maar voor nu nog niet wel opschrijven in progressverslag
 
 <details>
 <summary>Personal notes</summary>

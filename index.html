@@ -41,26 +41,30 @@
                     </legend>
                     <label for="xx_fristName">
                         Voorletter(s)
-                        <input type="text" id="xx_fristName" name="overledene_voornaam">
+                        <input type="text" id="xx_fristName" name="overledene_voornaam" required minlength="2"
+                            pattern="^[A-Za-zÀ-ÿ]+$" />
+
                     </label>
                     <label for="xx_infix">
                         tussenvoegsel(s)
-                        <input type="text" id="xx_infix" name="overledene_tussenvoegsel">
+                        <input type="text" id="xx_infix" name="overledene_tussenvoegsel" pattern="^[A-Za-zÀ-ÿ'’]*$" />
                     </label>
                     <label for="xx_lastName">
                         Achternaam
-                        <input type="text" id="xx_lastName" name="overledene_achternaam">
+                        <input type="text" id="xx_lastName" name="overledene_achternaam" required minlength="2"
+                            pattern="^[A-Za-zÀ-ÿ]+$" />
                     </label>
                 </fieldset>
 
                 <label for="xx_bsn">
                     Bsn overledene
-                    <input type="number" id="xx_bsn" name="overledene_bsn">
+                    <input type="number" id="xx_bsn" name="overledene_bsn" required minlength="9" maxlength="9">
                 </label>
 
                 <label for="xx_passingDate">
                     Overlijdingsdatum
-                    <input type="date" id="xx_passingDate" name="overledene_overlijdingsdatum">
+                    <input type="date" id="xx_passingDate" name="overledene_overlijdingsdatum" required min="2026-01-01"
+                        max="2026-12-31">
                 </label>
 
             </fieldset>
@@ -79,8 +83,8 @@
                         van overlijden?
                     </legend>
                     <label for="A_pn_maritalStatus_true">
-                        <input type="radio" id="A_pn_maritalStatus_true" name="overledene_huwelijks_situatie"
-                            value="Ja">
+                        <input type="radio" id="A_pn_maritalStatus_true" name="overledene_huwelijks_situatie" value="Ja"
+                            required>
                         Ja
                     </label>
                     <label for="Apn_maritalStatus_false">
@@ -138,7 +142,7 @@
                         <legend> Had de overledene kinderen?
                         </legend>
                         <label for="A_ch_children_true">
-                            <input type="radio" id="A_ch_children_true" name="overledene_kinderen" value="Ja">
+                            <input type="radio" id="A_ch_children_true" name="overledene_kinderen" value="Ja" required>
                             Ja
                         </label>
                         <label>
@@ -191,7 +195,7 @@
                         <legend> Had de overledene een testament?
                         </legend>
                         <label for="A_wl_will_true">
-                            <input type="radio" id="A_wl_will_true" name="overledene_testament" value="Ja">
+                            <input type="radio" id="A_wl_will_true" name="overledene_testament" value="Ja" required>
                             Ja
                         </label>
                         <label for="A_wl_will_false">
@@ -208,35 +212,39 @@
                         <legend>Gegevens van notaris</legend>
                         <label for="nt_protocolNumber">
                             Protocolnummer notaris
-                            <input type="number" id="nt_protocolNumber" name="notaris_protocolnummer">
+                            <!-- text omdat number de 0'en eraf kan halen -->
+                            <input type="text" id="nt_protocolNumber" name="notaris_protocolnummer" pattern="[0-9]{6}"
+                                inputmode="numeric" maxlength="6">
                         </label>
 
                         <fieldset id="nt_fullName">
                             <legend>Volledige naam</legend>
                             <label for="nt_fullName">
                                 Voorletter(s)
-                                <input type="text" id="nt_fullName" name="notaris_voornaam">
+                                <input type="text" id="nt_fullName" name="notaris_voornaam" minlength="2"
+                                    pattern="^[A-Za-zÀ-ÿ]+$">
                             </label>
                             <label for="nt_infix">
                                 tussenvoegsel(s)
-                                <input type="text" id="nt_infix" name="notaris_tussenvoegsel">
+                                <input type="text" id="nt_infix" name="notaris_tussenvoegsel"
+                                    pattern="^[A-Za-zÀ-ÿ'’]*$">
                             </label>
                             <label for="nt_lastName">
                                 Achternaam
-                                <input type="text" id="nt_lastName" name="notaris_achternaam">
+                                <input type="text" id="nt_lastName" name="notaris_achternaam" minlength="2"
+                                    pattern="^[A-Za-zÀ-ÿ]+$">
                             </label>
                         </fieldset>
 
                         <label for="nt_location">
                             Vestigingsplaats
-                            <input type="text" id="nt_location" name="notaris_vestigingsplaats">
+                            <input type="text" id="nt_location" name="notaris_vestigingsplaats"/>
                         </label>
-
                     </fieldset>
 
                     <label for="Q_wl_date">
                         Datum van het testament of van de laatste wijziging
-                        <input type="text" id="Q_wl_date" name="testament_datum">
+                        <input type="text" id="Q_wl_date" name="testament_datum" max="2026-12-31"/>
                     </label>
                 </fieldset>
 

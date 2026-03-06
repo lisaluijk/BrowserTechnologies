@@ -391,7 +391,7 @@ input:focus {
 }
 
 fieldset>:has(input[type="radio"]) {
-    background-color: hotpink;
+    /* background-color: hotpink; */
 }
 
 
