@@ -195,48 +195,91 @@ kijken naar typografie met font weigth medirum en sizing
 
 </details>
 
-vrijdag 6 maart 
-1430 feedback opschrijven
-1445 verder met code validatie klaarmaken voor html
-1615 tot dit html attributen toegepast voor goede validatie en rearch gedaan naar regex
+<details>
+<summary>Vrijdag </summary>
 
-to do 
-met js toevoegen dat er ook alleen maar letters kunnen worden getypt geen nummers
-elf proof en styling bsn
-kijken  naar formatting aanpassen met shortcut of prettier
-nadenken over text of number en kijknennaar js daarvoor en dat er nullen voorkomen als er minder dingen zijn toegevoegdd
-vor plaatsen zon datalist doen
-met js datum van vandaag doen en maybe bij datum wijziging testament doen dat je niet later kan doen dan datum overleiden van persoon
+### Vrijdag 6 maart 
 
+- **14:30-14:45** — Gekregen feedback  noteren
+- **14:45-16:15** — Html attributen toepassen voor validatie (waarbij ik me ook iets meer heb verdiept in regex)
 
-I asked chat for the patterns
-https://rapidtoolset.com/nl/tool/regex-explainer
-https://docs.validatar.com/docs/commonly-used-regex
-https://rapidtoolset.com/nl/tool/regex-explainer
+Ik heb de volgende bronnen gebruikt voor regex:
+- [Vertaler van regex](https://rapidtoolset.com/nl/tool/regex-explainer)
+- [veel gebruikte patterns](https://docs.validatar.com/docs/commonly-used-regex)
 
-## Feedback
-- read me ook echt toevoegen welke keuzes je hebt gemaakt en waarom
-- Probeer dingen echt te hergebruiken enzo
-- nesten maybe
-- leidt de gebruiker echt aan de hand mee
-- probeer dingen altijd positief te benaderen ook met variabel namen dus niet :not(:has(blablabla))
-- ctrl shift p in console om js in inspecteren  uit te zetten
-- 
+</details>
 
-persoonlijke feedback:
-- denkna over of ik het wil weglaten of wil laten zien met progressive disclodure. 
-- misschein ga ik er tijd bij zette 
-- alles opschrijven waar ik ove rna denk ook al heb i geen tijd gehad om het te implementeren of te testen maar schrijf dingen op en welke afwegingen in maak
-- van jeppe kijken naar pattern 
+## Weekly check-out | week 2
+Ik heb me deze week vooral gefocusd op de styling van mijn form waar ik me echt heb verloren in de custom properties en dingen tot op de details doen, waardoor ik nu n0g niet tevreden ben met wat ik tot nu toe heb gedaan. Als ik ergens aan begin ga ik er altijd volledig voor en ik vind het lastig om dingen half te doen wat me soms wel eens tegen staat omdat ik moeite heb met taken prioriseren en ook ergens mee te stoppen als het te lang duurt en het verstandiger is om me ergens anders op te focussen. Ik wil hier daarom in de komende twee weken meer op letten en dit misschien ook de rest van de minor doen. 
+
+### Leerdoel 1 – CSS-animaties & micro-animaties
+Nog niets mee gedaan en als ik me hier al mee bezig houdt wordt dit wss in de laatste week. Misschine kan ik dit een beetje verwerken maar ik ben dus bang dat ik hier meer tijd in ga steken dan in de echte opdracht.
+
+### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Met de custom properties ben ik hier zeker veel mee bezig geweest. Ik denk wel dat ik dit leerdoel soms echter iets meer los moet laten omdat ik soms misschien te veel hiermee bezig ben waardoor ik niet hele grote stappen maak in mijn form. Ik heb de neiging om soms heel erg lang over een opzet van iets na te denken waarbij ik mezelf continue de vraag stel: "Is dit de beste manier?" Ik moet dit dus iets meer los laten ben ik bang omdat het me wel echt veel tijd kost. Ik wil me komende week weer wat meer verdiepen in shortcuts. Dat is er deze week niet echt van gekomen.
+
+### Leerdoel 3 – Itereren binnen het ontwerpproces
+Ik denk dat ik hier iets meer aandacht aan kan gaan besteden. Ik heb nu de neiging om dingen die ik doe gelijk zo goed mogelijk te doen waardoor het vrij lang duurt. Ik kan ook denken ik maak nu een basis en itereer dat later verder op áls ik de tijd daarvoor heb. Alleen ben ik dan bang dat ik ook dingen dubbel of voor niks doe wat me nu denk ik tegen houdt. Ik wil dit wel gaan proberen de komende week.
+
+### Feedback van voortgangsgesprek
+
+#### Feedback teamgenootjes die ik ook kan gebruiken
+- In mijn read me ook noteren welke ontwerp keuzes ik maak en waarom
+- Kijk goed of je code kunt hergebruiken, probeer het dry te houden -> in praktijk hoeft het niet compleet dry als het de leesbaarheid vergroot.
+- Kijk naar nesten van code eventueel
+- Probeer de gebruiker zo veel mogelijk aan de hand mee te leiden en dingen voor te kauwen
+- Gebruik in de inspector console crtl shift + p om js uit te zetten
+- Probeer altijd dingen positief te benaderen -> variablen positief, niet :not(:has(blablabla)), etc
+
+#### persoonlijke feedback:
+- denk na over of ik het wil weglaten of wil laten zien met progressive disclodure. 
+- misschein ga ik er tijd indicaties bij zetten
+- alles opschrijven waar ik ove rna denk ook als heb ik geen tijd gehad om het te implementeren of te testen maar schrijf dingen op en welke afwegingen in maak
+- link van jeppe kijken naar pattern 
 - maybe nog css opsplitsen maar nu nog geen prio
 - beter prioriseren
-- en verder weet ik het echt niet meer even
 - nu al best goede styling
 - radiobuttons ja en nee buttons maken
 - kijk eerst of je dingen kan doen met wat ik al heb, hoef nog niet gelijk div's toe te voegen maar mocht het nodig zijn dan is dat wel de beste oplossing
 
+### Wat wil ik volgende week doen
+- Styling voor nu even laten zitten
+- Kijken naar validatie
+- Kijken naar twee patterns: Progressive disclosure en ?
+- Laten we het voor nu daar maar even ophouden en kijken hoe dat gaat. 
+
+<details>
+<summary>Dag 4</summary>
+
+### Vrijdag 6 maart | checkout met: __
+
+#### Wat heb ik vandaag gedaan?
+- 930 1015 hoorcollege van rijk
+1030 read me bijwerken een notes maken over het hoorcollege van Rijk
+1045-1110 gesprek met Rijk over de form en heel veel andere dingen
+1115  bevindingen en menignen opschrijven over de talkv van rijk
+1130 weekly checkout schrijven en de gehele read me weer opschonen en bijwerken (hier was ik vrijdag helaas niet aan toegekomen)
+
+#### Wat heb ik geleerd?
+
+
+#### Wat ga ik volgende keer doen?
+
+#### Welke afwegingen heb ik genomen en waar heb ik over na gedacht
+
+#### Kleine reflectie van vandaag
+
+
+</details>
+
+to do 
+
+
+
+
 idee required en progressive enhancement
 in html wel alles required maken en dan ook al een value nee geven dat dan stylen alsof het nog niet ingevuld is zodat de gebruiker he tniet mist if you get what i mean maar voor nu nog niet wel opschrijven in progressverslag
+
 
 <details>
 <summary>Personal notes</summary>
@@ -244,14 +287,22 @@ in html wel alles required maken en dan ook al een value nee geven dat dan style
 ## Mijn eigen (nog ietwat rommilige) notes
 
 #### ideeën die ik nog wil toepassen
+- opslaan knop
+- read me schrijven voor de code maybe?
 - validation per fieldset met pop up of iets dergelijks
 - de box kan je stylen met js
 - naar de patterns kijken die ik wil doen (progressive disclosure. string voor postcode enzo, toevoegen van verkrijgers, de tekst informatie van dat andere document.) wiskunde voor iets ik weet niet meer wat
-- van alles hihihihihihi
-
-
-!bij notities even opletten dat obsidion en notitities staan ook op mkijn telefoon van vandaag!
-
+- met js toevoegen dat er ook alleen maar letters kunnen worden getypt geen nummers
+- elf proof en styling bsn
+- kijken  naar formatting aanpassen met shortcut of prettier
+- nadenken over text of number en kijknennaar js daarvoor en dat er nullen voorkomen als er minder dingen zijn toegevoegdd
+- for plaatsen zon datalist doen
+- met js datum van vandaag doen en maybe bij datum wijziging testament doen dat je niet later kan doen dan datum overleiden van persoon
+- Check validity knop? maybe
+- Scroll en dan validation als je wegscrollt terug kan scrollen naaar het vak dat niet goed is nog
+- report.validity in js
+- blur in js en user-focus ofzo voor css
+- custom validity (je bent er bijna en je moet hier iets invullen)
 
 
 
