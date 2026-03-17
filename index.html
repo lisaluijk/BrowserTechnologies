@@ -43,28 +43,32 @@
                         Voorletter(s)
                         <input type="text" id="xx_fristName" name="overledene_voornaam" required minlength="2"
                             pattern="^[A-Za-zÀ-ÿ]+$" />
+                        <p class="errorMessage" aria-live="polite">Vul de voorletter(s) van de overledene , gevolgd door een punt.</p>
 
                     </label>
                     <label for="xx_infix">
-                        tussenvoegsel(s)
+                        tussenvoegsel(s) (optioneel)
                         <input type="text" id="xx_infix" name="overledene_tussenvoegsel" pattern="^[A-Za-zÀ-ÿ'’]*$" />
                     </label>
                     <label for="xx_lastName">
                         Achternaam
                         <input type="text" id="xx_lastName" name="overledene_achternaam" required minlength="2"
                             pattern="^[A-Za-zÀ-ÿ]+$" />
+                        <p class="errorMessage" aria-live="polite">Vul de volledige achternaam van de overledene in.</p>
                     </label>
                 </fieldset>
 
                 <label for="xx_bsn">
                     Bsn overledene
                     <input type="number" id="xx_bsn" name="overledene_bsn" required minlength="9" maxlength="9">
+                    <p class="errorMessage" aria-live="polite">Vul het bsn-nummer van de overledene in</p>
                 </label>
 
                 <label for="xx_passingDate">
                     Overlijdingsdatum
                     <input type="date" id="xx_passingDate" name="overledene_overlijdingsdatum" required min="2026-01-01"
                         max="2026-12-31">
+                    <p class="errorMessage" aria-live="polite">Vul de overleidingsdatum van de overledene in, deze kan niet in de toekomst zijn.</p>
                 </label>
 
             </fieldset>
@@ -72,7 +76,7 @@
 
             <!-- MARK: Partner of deceased -->
             <!-- Partner = pn_[varname] -->
-            <fieldset id="data_partner">
+            <fieldset id="data_partner" class="isProgressive">
                 <legend>
                     <h3>Partner van de overledene</h3>
                 </legend>
@@ -87,10 +91,10 @@
                             required>
                         Ja
                     </label>
-                    <label for="Apn_maritalStatus_false">
-                        <input type="radio" id="A_pn_maritalStatus_false" name="overledene_huwelijks_situatie"
-                            value="Nee">
-                        Nee (ga verder met vraag 1c)
+                    <label for="A_pn_maritalStatus_false">
+                        <input type="radio" id="A_pn_maritalStatus_false" class="progressiveRequirement"
+                            name="overledene_huwelijks_situatie" value="Nee">
+                        Nee
                     </label>
                 </fieldset>
 
@@ -106,9 +110,9 @@
                         Ja ( stuur een kopie van de akte mee met de aangifte)
                     </label>
                     <label for="A_pn_notarialCertificate_false">
-                        <input type="radio" id="A_pn_notarialCertificate_false" name="overledene_notariele_akte"
-                            value="Nee">
-                        Nee ( ga verder met vraag c1)
+                        <input type="radio" id="A_pn_notarialCertificate_false" class="progressiveRequirement"
+                            name="overledene_notariele_akte" value="Nee">
+                        Nee
                     </label>
                 </fieldset>
 
@@ -129,129 +133,127 @@
                     </label>
                 </fieldset>
 
+            </fieldset>
 
-                <!-- MARK: Children of deceased -->
-                <!-- Children = ch_[varname] -->
-                <fieldset id="data_children">
-                    <legend>
-                        <h3> van de overledene</h3>
+
+            <!-- MARK: Children of deceased -->
+            <!-- Children = ch_[varname] -->
+            <fieldset id="data_children" class="isProgressive">
+                <legend>
+                    <h3> Kinderen van de overledene</h3>
+                </legend>
+
+                <!-- vraag 1c | a -->
+                <fieldset id="Q_ch_children">
+                    <legend> Had de overledene kinderen?
                     </legend>
-
-                    <!-- vraag 1c | a -->
-                    <fieldset id="Q_ch_children">
-                        <legend> Had de overledene kinderen?
-                        </legend>
-                        <label for="A_ch_children_true">
-                            <input type="radio" id="A_ch_children_true" name="overledene_kinderen" value="Ja" required>
-                            Ja
-                        </label>
-                        <label>
-                            <input type="radio" id="A_ch_children_false" name="overledene_kinderen" value="Nee">
-                            Nee ( ga verder met vraag 1d)
-                        </label>
-                    </fieldset>
-
-                    <!-- vraag 1c | b -->
-                    <fieldset id="Q_ch_passedAway">
-                        <legend> Is 1 van deze kinderen eerder overleden dan de overledene voor
-                            wie nu aangifte doet?
-                        </legend>
-                        <label for="A_ch_passedAway_true">
-                            <input type="radio" id="A_ch_passedAway_true" name="overledene_kinderen_overleden"
-                                value="Ja">
-                            Ja
-                        </label>
-                        <label>
-                            <input type="radio" id="A_ch_passedAway_false" name="overledene_kinderen_overleden"
-                                value="Nee">
-                            Nee ( ga verder met vraag 1d)
-                        </label>
-                    </fieldset>
-
-                    <!-- vraag 1c | c -->
-                    <fieldset id="Q_ch_grandchildren">
-                        <legend> Had dit overleden kind zelf kinderen?
-                        </legend>
-                        <label for="A_ch_grandchildren_true">
-                            <input type="radio" id="A_ch_grandchildren_true" name="overledene_kleinkinderen" value="Ja">
-                            Ja
-                        </label>
-                        <label for="A_ch_grandchildren_false">
-                            <input type="radio" id="A_ch_grandchildren_false" name="overledene_kleinkinderen"
-                                value="Nee">
-                            Nee
-                        </label>
-                    </fieldset>
-                </fieldset>
-
-                <!-- MARK: Will of deceased -->
-                <!-- Will = wl_[varname] -->
-                <fieldset id="data_will">
-                    <legend>
-                        <h3>Testament van de overledene</h3>
-                    </legend>
-
-                    <fieldset id="Q_wl_will">
-                        <legend> Had de overledene een testament?
-                        </legend>
-                        <label for="A_wl_will_true">
-                            <input type="radio" id="A_wl_will_true" name="overledene_testament" value="Ja" required>
-                            Ja
-                        </label>
-                        <label for="A_wl_will_false">
-                            <input type="radio" id="A_wl_will_false" name="overledene_testament" value="Nee">
-                            Nee
-                        </label>
-                    </fieldset>
-
-
-
-                    <!-- Notary of deceased -->
-                    <!-- Notary = nt_[varname] -->
-                    <fieldset id="data_notary">
-                        <legend>Gegevens van notaris</legend>
-                        <label for="nt_protocolNumber">
-                            Protocolnummer notaris
-                            <!-- text omdat number de 0'en eraf kan halen -->
-                            <input type="text" id="nt_protocolNumber" name="notaris_protocolnummer" pattern="[0-9]{6}"
-                                inputmode="numeric" maxlength="6">
-                        </label>
-
-                        <fieldset id="nt_fullName">
-                            <legend>Volledige naam</legend>
-                            <label for="nt_fullName">
-                                Voorletter(s)
-                                <input type="text" id="nt_fullName" name="notaris_voornaam" minlength="2"
-                                    pattern="^[A-Za-zÀ-ÿ]+$">
-                            </label>
-                            <label for="nt_infix">
-                                tussenvoegsel(s)
-                                <input type="text" id="nt_infix" name="notaris_tussenvoegsel"
-                                    pattern="^[A-Za-zÀ-ÿ'’]*$">
-                            </label>
-                            <label for="nt_lastName">
-                                Achternaam
-                                <input type="text" id="nt_lastName" name="notaris_achternaam" minlength="2"
-                                    pattern="^[A-Za-zÀ-ÿ]+$">
-                            </label>
-                        </fieldset>
-
-                        <label for="nt_location">
-                            Vestigingsplaats
-                            <input type="text" id="nt_location" name="notaris_vestigingsplaats"/>
-                        </label>
-                    </fieldset>
-
-                    <label for="Q_wl_date">
-                        Datum van het testament of van de laatste wijziging
-                        <input type="text" id="Q_wl_date" name="testament_datum" max="2026-12-31"/>
+                    <label for="A_ch_children_true">
+                        <input type="radio" id="A_ch_children_true" name="overledene_kinderen" value="Ja" required>
+                        Ja
+                    </label>
+                    <label>
+                        <input type="radio" id="A_ch_children_false" class="progressiveRequirement"
+                            name="overledene_kinderen" value="Nee">
+                        Nee
                     </label>
                 </fieldset>
 
+                <!-- vraag 1c | b -->
+                <fieldset id="Q_ch_passedAway">
+                    <legend> Is 1 van deze kinderen eerder overleden dan de overledene voor
+                        wie nu aangifte doet?
+                    </legend>
+                    <label for="A_ch_passedAway_true">
+                        <input type="radio" id="A_ch_passedAway_true" name="overledene_kinderen_overleden" value="Ja">
+                        Ja
+                    </label>
+                    <label>
+                        <input type="radio" id="A_ch_passedAway_false" class="progressiveRequirement"
+                            name="overledene_kinderen_overleden" value="Nee">
+                        Nee
+                    </label>
+                </fieldset>
+
+                <!-- vraag 1c | c -->
+                <fieldset id="Q_ch_grandchildren">
+                    <legend> Had dit overleden kind zelf kinderen?
+                    </legend>
+                    <label for="A_ch_grandchildren_true">
+                        <input type="radio" id="A_ch_grandchildren_true" name="overledene_kleinkinderen" value="Ja">
+                        Ja
+                    </label>
+                    <label for="A_ch_grandchildren_false">
+                        <input type="radio" id="A_ch_grandchildren_false" name="overledene_kleinkinderen" value="Nee">
+                        Nee
+                    </label>
+                </fieldset>
             </fieldset>
 
-            <button type="submit">Formulier verzenden</button>
+            <!-- MARK: Will of deceased -->
+            <!-- Will = wl_[varname] -->
+            <fieldset id="data_will" class="isProgressive">
+                <legend>
+                    <h3>Testament van de overledene</h3>
+                </legend>
 
+                <fieldset id="Q_wl_will">
+                    <legend> Had de overledene een testament?
+                    </legend>
+                    <label for="A_wl_will_true">
+                        <input type="radio" id="A_wl_will_true" name="overledene_testament" value="Ja" required>
+                        Ja
+                    </label>
+                    <label for="A_wl_will_false">
+                        <input type="radio" id="A_wl_will_false" class="progressiveRequirement" name="overledene_testament" value="Nee">
+                        Nee
+                    </label>
+                </fieldset>
+
+                <!-- Notary of deceased -->
+                <!-- Notary = nt_[varname] -->
+                <fieldset id="data_notary">
+                    <legend>Gegevens van notaris</legend>
+                    <label for="nt_protocolNumber">
+                        Protocolnummer notaris
+                        <!-- text omdat number de 0'en eraf kan halen -->
+                        <input type="text" id="nt_protocolNumber" name="notaris_protocolnummer" pattern="[0-9]{6}"
+                            inputmode="numeric" maxlength="6">
+                    </label>
+
+                    <fieldset id="nt_fullName">
+                        <legend>Volledige naam</legend>
+                        <label for="nt_fullName">
+                            Voorletter(s)
+                            <input type="text" id="nt_fullName" name="notaris_voornaam" minlength="2"
+                                pattern="^[A-Za-zÀ-ÿ]+$">
+                        </label>
+                        <label for="nt_infix">
+                            tussenvoegsel(s)
+                            <input type="text" id="nt_infix" name="notaris_tussenvoegsel" pattern="^[A-Za-zÀ-ÿ'’]*$">
+                        </label>
+                        <label for="nt_lastName">
+                            Achternaam
+                            <input type="text" id="nt_lastName" name="notaris_achternaam" minlength="2"
+                                pattern="^[A-Za-zÀ-ÿ]+$">
+                        </label>
+                    </fieldset>
+
+                    <label for="nt_location">
+                        Vestigingsplaats
+                        <input type="text" id="nt_location" name="notaris_vestigingsplaats" />
+                    </label>
+                </fieldset>
+
+                <label for="Q_wl_date">
+                    Datum van het testament of van de laatste wijziging
+                    <input type="text" id="Q_wl_date" name="testament_datum" max="2026-12-31" />
+                </label>
+
+
+            </fieldset>
+
+
+            <button type="submit">Formulier verzenden</button>
 
         </form>
     </body>

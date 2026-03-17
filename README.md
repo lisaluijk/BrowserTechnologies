@@ -251,34 +251,141 @@ Ik denk dat ik hier iets meer aandacht aan kan gaan besteden. Ik heb nu de neigi
 <details>
 <summary>Dag 4</summary>
 
-### Vrijdag 6 maart | checkout met: __
+### Maandag 9 maart | checkout met: Sabrina
 
 #### Wat heb ik vandaag gedaan?
-- 930 1015 hoorcollege van rijk
-1030 read me bijwerken een notes maken over het hoorcollege van Rijk
-1045-1110 gesprek met Rijk over de form en heel veel andere dingen
-1115  bevindingen en menignen opschrijven over de talkv van rijk
-1130 weekly checkout schrijven en de gehele read me weer opschonen en bijwerken (hier was ik vrijdag helaas niet aan toegekomen)
+- **09:30–10:15** — Hoorcollege van Rijk  
+- **10:30–10:45** — README bijgewerkt en aantekeningen gemaakt over het hoorcollege van Rijk  
+- **10:45–11:10** — Gesprek met Rijk over de form en andere onderwerpen  
+- **11:15–11:30** — Bevindingen en meningen over de talk van Rijk opgeschreven  
+- **11:30–12:00** — Weekly check-out geschreven en README verder opgeschoond en bijgewerkt (vrijdag niet aan toegekomen)  
+- **12:00–12:30** — Begonnen aan validatie  
+- **12:30–13:30** — Pauze  
+- **13:30–14:25** — Begonnen aan progressive disclosure  
+- **14:40–15:00** — Verder gewerkt aan disclosure  
+- **15:00–15:20** — Weekly Nerd voorbereid  
+- **15:20–15:50** — Verder gewerkt aan selector voor progressive disclosure
+- **15:50–16:00** — Selector werkend gekregen!!! (met wat hulp van Sanne: bleek dat ik de class op de label had gezet ipv de input)
+- **16:00–16:15** — Check-out  
+- **17:15-16:15** - Styling "ja" en "nee" radiobuttons
+
+
+*!note: Naar aanleding van feedback en mijn eigen ervaringen breidt ik de daily checkout vanaf nu iets uit.*
+
+#### Gebruikte bronnen
+- [client-side validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
+- [pdf erfbelasting](https://download.belastingdienst.nl/belastingdienst/docs/aangifte_erfbel_2026_suc0602z61fol.pdf)
+- [subsequent-sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Subsequent-sibling_combinator)
+- [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+-[voorbeeld ns formulier](https://gtbv-formulier.ns.nl/ns/en-customer-service-refund-for-delay)
+-[voorbeeld ns vragenlijst](https://service-formulieren.ns.nl/ns/klantenservice-geld-terug-welke-vergoeding-biedt-ns-vragenlijst)
+
 
 #### Wat heb ik geleerd?
+- Ik snap direct en subsequent selectors nu beter
 
 
 #### Wat ga ik volgende keer doen?
+- Verder met de styling van progressive disclosure
+- Meer doen aan validatie
 
 #### Welke afwegingen heb ik genomen en waar heb ik over na gedacht
 
+- **progessive disclosure pattern** 
+Ik heb al veel nagedacht over de progressive disclosure. Als ik naar ux kijk lijkt het mij namelijk erg hinderlijk als er de hele tijd vragen bijkomen op basis van wat ik invul. Ik kan dan geen goede inschatting maken van hoe lang iets duurt en er komt de hele tijd meer bij. Ik zat er daarom over na te denken om het andersom en eerst alles te laten zien en vragen weg te halen. Tijdens mijn reflectie heb ik hier feedback op gevraagd. Victor gaf toen aan dat hij het minder gebruikersvriendelijk vind omdat de gebruiker het hele formulier ziet en ook al middenin het formulier kan beginnen. Vandaag heb ik het er ook met Rijk over gehad. Daar ben ik op het idee gekomen om het toch te houden maar te disabelen zodat de gebruiker goede feedback heeft en beter snapt wat er gebeurt. Wel ga ik misschein de verschillende secties met progressive discloure doen maar hier moet ik nog goed over na denken.
+
+- **progressive disclosure toepassen** 
+Ik heb het form doorgenomen en het pattern is bij vragen die van elkaar afhangen dat als je er op een nee doet je bij mij de rest van de fieldset kan overslaan. Dit ga ik gebruiken voor mijn benadering. Bij bijna alle vragen is de disclosure op basis van een nee. Echter ga ik toch een extra classs gebruiken want bij 7 vraag is dat niet zo, plus dan is het een meer responsive code (is dat de goede term?) ![voorbeeld van een vraag waar het niet zo is](/readme_assets/progressive-voorbeeld.png) (bij nog een keer goed kijken kom ik er achter dat je mijn pattern sowieso niet kan gebruiken voor die vraag maar mijn code wordt er alsnog beter van denk ik)
+
 #### Kleine reflectie van vandaag
+Als ik terugkijk op wat ik vandaag heb gedaan ben ik niet onwijs tevreden. Ik merk dat taken me veel langer kosten dan dat ik inschat. Ik weet niet zo heel goed waardoor dat komt dus daar wil ik morgen op letten. Ik heb vandaag wel wat tijd besteed aan mijn notes schrijven en mijn readme aanvullen + beter mijn denkprocessen noteren dus misschien heeft het daarmee te maken. Ik hoop echt dat ik morgen wat slagen kan maken.
+
 
 
 </details>
 
-to do 
+<details>
+### Dinsdag 10 maart | checkout met: Kelly
+
+#### Wat heb ik vandaag gedaan?
+- 930 -1035 weekly geek
+- 1045 verer met radiobutton styling
+- 1100-1150 workshop toegankelijkheid error messages
+-1200-1320 pauze
+-1320 styling radiobutton afmaken
+1340 1430 weer verdiept in de workshop van vanochtend met validatie en begonnen met uitdenken hoe ik het op mijn eigen website wil gaan doen.
+1430 1500 werken aaan header styling met before en clamp uitgezocht
+1510 begin gemaakt custom validation messages met javascript en de dingen die ik in de workshop heb geleerd toegepast
+
+
+#### Gebruikte bronnen
+- [client-side validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
+- [js queries (goede term? voor validation)](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/valid)
+
+
+#### Wat heb ik geleerd?
+- Hoe je custom validation aanpakt in js
+- Waar je op moet letten als je de validation toegangelijk wilt houden
+- aria-live="polite" en aria-live="assertive"
+- aria-describedby
+
+#### Wat ga ik volgende keer doen?
+- Kiezen welk ander pattern ik wil doen
+- Styling van de progressive disclosure
+- het formulier opslitsen in meerder pagina's
+
+#### Welke afwegingen heb ik genomen en waar heb ik over na gedacht
+
+- **styling radiobuttons**
+Ik heb aan Victor gevraagd of heet oke was dat ik display none had gebruikt waarop hij aangav dat ik beter opacity en postion absolute kion gebruiken dus dat heb ik gedaan.
 
 
 
+#### Kleine reflectie van vandaag
+Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel tijd kosten het verwerken van de stof is. Ik wil iets  eerst snappen voordat ik ermee ga werken. Dit kost mij vrij veel tijd omdat dat de manaier is waarop ik werk. Ik zou eventueel eerder kunnen proberen ergens mee te werken maar ik denk dat ik dan even lang bezig ben omdat wanneer iets niet werkt ik alsnog erachter moet komen waarom niet. Tenslotten ben ik hier om iets te leren. Wel moet ik dignen misschien minder perfect willen uitwerken en sneller aan de volgende stap beginnen en pas gaan itereren als ik tijd over heb. Ik heb nu bijvoorbeeld nog maar 1 pattern half en moet eigenlijk al begonnen zijn aan mijn tweede. Ik hoop dat ik door de minor heen beter kan inschatten wat ik in een bepaalde tijd voor elkaar kan krijgen.
 
-idee required en progressive enhancement
-in html wel alles required maken en dan ook al een value nee geven dat dan stylen alsof het nog niet ingevuld is zodat de gebruiker he tniet mist if you get what i mean maar voor nu nog niet wel opschrijven in progressverslag
+
+</details>
+
+### gekregen feedback 
+- clean vormgeving
+- ide kan met nummers eventueel even maandag vragen aaan victor
+- error moet eigenlijk  alleen in js en dan kan je wel progressive enhancement doen dat css aan gaat ofzo iets
+- tweede pattern is infor niet genoeg
+- dan ook nog progressbar erbij
+- idk 
+
+
+<details>
+### Dinsdag 17 maart | checkout met: __
+
+#### Wat heb ik vandaag gedaan?
+- 950 - eisen opdracht dooegenomen
+1000 - 
+
+
+
+#### Gebruikte bronnen
+- 
+
+
+#### Wat heb ik geleerd?
+- 
+
+#### Wat ga ik volgende keer doen?
+- 
+
+#### Welke afwegingen heb ik genomen en waar heb ik over na gedacht
+
+- 
+
+
+#### Kleine reflectie van vandaag
+
+
+
+</details>
+
 
 
 <details>
@@ -287,7 +394,10 @@ in html wel alles required maken en dan ook al een value nee geven dat dan style
 ## Mijn eigen (nog ietwat rommilige) notes
 
 #### ideeën die ik nog wil toepassen
+- opdracht requirements doornemen
 - opslaan knop
+- ook met warning werken niet alleen error maybe
+- 
 - read me schrijven voor de code maybe?
 - validation per fieldset met pop up of iets dergelijks
 - de box kan je stylen met js
@@ -303,8 +413,16 @@ in html wel alles required maken en dan ook al een value nee geven dat dan style
 - report.validity in js
 - blur in js en user-focus ofzo voor css
 - custom validity (je bent er bijna en je moet hier iets invullen)
+- 
+idee required en progressive enhancement
+in html wel alles required maken en dan ook al een value nee geven dat dan stylen alsof het nog niet ingevuld is zodat de gebruiker he tniet mist if you get what i mean maar voor nu nog niet wel opschrijven in progressverslag
 
 
+Id nummer maken en dan kan ik met for each loop en index getal herbruikbare code schrijven
+
+off
+
+id geven aan input 
 
 
 ### Prefixes tot nu toe:
@@ -313,7 +431,8 @@ in html wel alles required maken en dan ook al een value nee geven dat dan style
 - partner = pn
 
 andere regels
-- 
+- Class = isProgressive
+- class = progressiveRequirement
 
 
 ### vormgeving types

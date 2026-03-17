@@ -41,6 +41,7 @@
     --orange-500: #f05c00;
 
     --red-300: #ff9496;
+    --red-500: #ec0045;
     --red-700: #b30525;
 
 
@@ -68,7 +69,7 @@
     --color-content-info: light-dark(var(--blue-500), var(--blue-400));
     --color-content-success: light-dark(var(--green-600), var(--green-300));
     --color-content-warning: light-dark(var(--orange-500), var(--orange-400));
-    --color-content-error: light-dark(var(--red-300), var(--red-700));
+    --color-content-error: light-dark(var(--red-500), var(--red-700));
     --color-content-logo: light-dark(var(--blue-700), var(--yellow-400));
 
     /* Background */
@@ -82,6 +83,7 @@
     --color-background-elevated-1: light-dark(var(--white), var(--gray-900));
     --color-background-elevated-2: light-dark(var(--white), var(--gray-800));
     --color-background-elevated-sunken: light-dark(var(--gray-25), var(--black));
+    --color-background-warning: light-dark(var(--orange-500), var(--orange-400));
 
 
     /* shadows */
@@ -127,7 +129,7 @@
 
 
     /* MARK: typography */
-    --typography-size-xxxl: clamp(1.375rem, 1.125rem + 0.8333vi, 1.75rem);
+    --typography-size-xxxl: clamp(3rem, 3.3rem + 0.9vi, 5rem);
     /* 28px - 22px */
     ;
     --typography-size-xxl: clamp(1.25rem, 1.0833rem + 0.5556vi, 1.5rem);
@@ -247,10 +249,22 @@ body {
 h1 {
     font-size: var(--typography-size-xxxl);
     padding-top: 1em;
-    padding-bottom: var(--spacing-inset-xs);
+    padding-bottom: var(--spacing-inset-l);
     line-height: var(--typography-line-height-m);
     color: var(--color-content-emphasis);
     font-weight: var(--typography-weight-bold);
+}
+
+h1::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 15vw;
+    height: 4rem;
+    top: 3rem;
+
+    /* left: 25%; */
+    border-top: var(--border-width-thick) solid var(--color-background-brand-primary);
 }
 
 /* h1 @media(1250px >= width) {
@@ -352,10 +366,10 @@ form {
 fieldset {
     border-radius: var(--border-radius-m);
     border: none;
-   
+
 }
 
-form > fieldset {
+form>fieldset {
     background: var(--color-background-elevated-2);
     box-shadow: var(--shadow-elevated-2);
 }
@@ -370,6 +384,33 @@ label {
     flex-direction: column;
 }
 
+label {
+
+    & .errorMessage {
+        display: none;
+        color: var(--color-content-error);
+    }
+
+    & .errorMessage::before {
+        /* content: "<svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM320 384C302.3 384 288 398.3 288 416C288 433.7 302.3 448 320 448C337.7 448 352 433.7 352 416C352 398.3 337.7 384 320 384zM320 192C301.8 192 287.3 207.5 288.6 225.7L296 329.7C296.9 342.3 307.4 352 319.9 352C332.5 352 342.9 342.3 343.8 329.7L351.2 225.7C352.5 207.5 338.1 192 319.8 192z"/></svg>"; */
+        display: block;
+        width: 22px;
+        height: 10px;
+        margin: 10px 5px 0 10px;
+    }
+
+    &:has(input:user-invalid) .errorMessage {
+        display: block;
+    }
+
+}
+
+/* input[type="number"] {
+    box-shadow: 8px -1px 0 -6px var(--color-content-input-default), 1px 0 0 var(--color-content-input-default);
+} */
+
+
+
 input {
     border: solid;
     border-radius: var(--border-radius-m);
@@ -377,22 +418,86 @@ input {
     padding: var(--spacing-inset-xs);
     border-color: var(--color-content-input-default);
 
+    &:hover {
+        border-color: var(--color-content-input-hover);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--color-content-interactive-default);
+        border-width: var(--border-width-medium);
+    }
+
+    &:user-invalid {
+        border-color: var(--color-content-error);
+        border-width: var(--border-width-medium);
+
+
+    }
+
+
+
     /* transition: 0.5s; */
 }
 
-input:hover {
-    border-color: var(--color-content-input-hover);
+fieldset:has(> label input[type="radio"]) {
+    display: flex;
+    gap: var(--spacing-gap-s);
+    /* box-shadow: 0 0 0 3px yellow;  */
 }
 
-input:focus {
-    outline: none;
-    border-color: var(--color-content-interactive-default);
-    border-width: var(--border-width-medium);
+fieldset:has(> label input[type="radio"]) legend {
+    color: var(--color-content-emphasis);
+    font-weight: var(--typography-weight-bold);
+    font-size: var(--typography-size-s);
 }
 
-fieldset>:has(input[type="radio"]) {
-    /* background-color: hotpink; */
+input[type="radio"] {
+    box-shadow: 0 0 0 3px yellow;
+    justify-content: center;
+
+    opacity: 0;
+    position: absolute;
+    left: -999rem
 }
+
+label:has(input[type="radio"]) {
+    /* display: block; */
+
+    color: var(--color-content-default);
+    font-size: var(--typography-size-m);
+    font-weight: var(--typography-weight-normal);
+
+    border: solid;
+    border-radius: var(--border-radius-m);
+    border-width: var(--border-width-thin);
+    padding: var(--spacing-inset-m);
+    border-color: var(--color-content-input-default);
+
+    align-items: center;
+
+    flex-grow: 1;
+    max-width: 15rem;
+
+
+    &:hover {
+        border-color: var(--color-content-input-hover);
+    }
+
+    &:has(input[type="radio"]:checked) {
+        outline: none;
+        border-color: var(--color-content-interactive-default);
+        border-width: var(--border-width-medium);
+    }
+}
+
+
+
+
+/* fieldset>:has(input[type="radio"]) {
+    /* background-color: hotpink;
+ } */
+
 
 
 
@@ -411,3 +516,26 @@ fieldset {
     background-color: red;
     color: white;
 }
+
+
+/* MARK: Progressive disclosure. */
+
+
+/* hier gebleven :') */
+form fieldset.isProgressive fieldset:has(.progressiveRequirement:checked)~* {
+    box-shadow: 0 0 0 3px hotpink;
+
+}
+
+/* input[type] {
+     border: solid 3px hotpink;
+    background: blue; 
+    box-shadow: 0 0 0 3px hotpink;
+
+} */
+
+
+
+/* form > fieldset > fieldset{
+    background: orange;
+} */
