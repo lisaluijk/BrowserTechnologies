@@ -377,8 +377,6 @@ Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel ti
 2145 remove chosen data js
 
 
-
-
 #### Gebruikte bronnen
 - https://stackoverflow.com/questions/16344583/style-select-element-based-on-selected-option
 -https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby
@@ -386,6 +384,25 @@ Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel ti
 - https://stackoverflow.com/questions/16344583/style-select-element-based-on-selected-option
 - https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
 - 
+
+</details>
+
+
+## Weekly check-out | week 4
+Ik ben matig trots op mijn werk. Wat ik heb ben ik trots op maar ik had nog heel veel meer willen doen. Ik heb me onderschat in hoeveel tijd dingen zouden duren en wist dat het kiele kiele zou worden maar had gehoopt dat alles op het einde samen zou komen, maar dat is helaas niet gelukt. Ik vind het jammer dat ik het vak niet met een goed gevoel af kan ronden. Maar ik ben wel trots op mezelf. Ik had de hele tijd het gevoel dat ik er niet lekker in zat maaar ben daar in de laatste week wat meer ingekomen. Hoewel dit wel vrij laat was. 
+
+Ik heb veel geleerd over naamgeving en solide html schrijven zodat de styling makkelijker is. Wel vind ik dat ik nog beter prioriteiten mag stellen. Ik heb de neiging me in details te verliezen wat nu ook is gebeurd. Ik wist het ook wel maar dacht dat het uiteindelijk allemaal wel goed zou komen. Ik wil hier meer aan werken deze minor zodat het niet nog een keer gebeurt. 
+
+###  Wat ik nog toe had willen voegen
+- Styling nog meer verbetern -> legends en labels kloppen nu niet helemaal
+- Meer vragen toevoegen omdat dat met de code die ik heb geschreven vrij makkelijk zou moeten gaan
+- Het formulier meer responsive maken
+- De numbers stylen zoals de ns dat ook doet
+- het pattern toevoegen waar je meerdere verkrijgers kan toevoegen
+- het formulier over meerdere paginas opsplitsen zodat je meerdere vragen hebt
+- progressbar maken
+
+
 
 
 </details>
