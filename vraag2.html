@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erfbelastings Formulier</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/vraag2.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <head>
+        <h2 class="warning">Dit is een schoolproject!!!!!!!!</h1>
+    </head>
+
+    <body>
+        <h1>Erfbelasting 2026 </h1>
+        <p>Met dit formulier doet u aangifte erfbelasting.</p>
+
+        <h3>Voor wie doet u aangifte?</h3>
+        <p>U doet aangifte erfbelasting voor alle personen of instellingen die iets krijgen uit de nalatenschap van de
+            overledene. In deze aangifte noemen wij dit 'Verkrijgers'. </p>
+
+        <form action="">
+
+
+
+            <!-- MARK: Authorized person/ endorsee -->
+            <!-- Authorized = au_[varname] -->
+            <fieldset id="identification_authorized">
+                <legend>
+                    <h3>Gegevens gemachtigde</h3>
+                </legend>
+
+                <label for="au_selectionType">
+                    Vul 1 van de 3 in: BSN/RSIN, beconnummer of protocolnummer 
+                    <select id="au_selectionType"
+                        name="gemachtigde_type" required>
+                        <option value="">-- Kies een optie --</option>
+                        <option value="bsn">Bsn/RSIN gemachtigde</option>
+                        <option value="becon">Beconnummer adviseur</option>
+                        <option value="protocol">Protocolnummer notaris</option>
+                    </select>
+                </label>
+                <p class="errorMessage errorHidden" id="err_au_selectionType" aria-live="polite"></p>
+
+                <label for="au_bsn">
+                    Vul het bsn of RSIN in van de gemachtigde
+                    <input type="text" id="au_bsn" name="gemachtigde_bsn" pattern="[0-9]{9}" inputmode="numeric"
+                        maxlength="9">
+                </label>
+                <p class="errorMessage errorHidden" id="err_au_bsn" aria-live="polite"></p>
+
+                <label for="au_beconNumber">
+                    Vul het beconnummer in van de adviseur
+                    <input type="text" id="au_beconNumber" name="gemachtigde_beconnummer" pattern="[0-9]{6}"
+                        inputmode="numeric" maxlength="6">
+                </label>
+                <p class="errorMessage errorHidden" id="err_au_beconNumber" aria-live="polite"></p>
+
+                <label for="au_protocolNumber">
+                    Vul het protocolnummer in van de notaris
+                    <input type="text" id="au_protocolNumber" name="gemachtigde_protocolnummer" pattern="[0-9]{6}"
+                        inputmode="numeric" maxlength="6">
+                </label>
+                <p class="errorMessage errorHidden" id="err_au_protocolNumber" aria-live="polite"></p>
+
+            </fieldset>
+
+            <!-- <fieldset id="data_authorized"></fieldset> -->
+
+            <button type="submit">Formulier verzenden</button>
+
+        </form>
+    </body>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

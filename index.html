@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="main.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
+    <script src="/scripts/errorHandling.js" defer></script>
+    <script src="/scripts/progressiveDisclosure.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
         <p>U doet aangifte erfbelasting voor alle personen of instellingen die iets krijgen uit de nalatenschap van de
             overledene. In deze aangifte noemen wij dit 'Verkrijgers'. </p>
 
-        <form action="">
+        <form action="">  
 
             <!-- MARK: Data deceased person - question 1 form-->
             <!-- Deceased = xx_[varname] -->
@@ -36,16 +38,13 @@
 
                 <!-- Full name -->
                 <fieldset id="xx_fullName">
-                    <legend>
-                        <h4> Volledige naam </h4>
-                    </legend>
+                    <legend>Volledige naam</legend>
                     <label for="xx_fristName">
                         Voorletter(s)
                         <input type="text" id="xx_fristName" name="overledene_voornaam" required minlength="2"
                             pattern="^[A-Za-zÀ-ÿ]+$" />
-                        <p class="errorMessage" aria-live="polite">Vul de voorletter(s) van de overledene , gevolgd door een punt.</p>
-
                     </label>
+                    <p class="errorMessage errorHidden" id="err_xx_fristName" aria-live="polite"></p>
                     <label for="xx_infix">
                         tussenvoegsel(s) (optioneel)
                         <input type="text" id="xx_infix" name="overledene_tussenvoegsel" pattern="^[A-Za-zÀ-ÿ'’]*$" />
@@ -54,22 +53,23 @@
                         Achternaam
                         <input type="text" id="xx_lastName" name="overledene_achternaam" required minlength="2"
                             pattern="^[A-Za-zÀ-ÿ]+$" />
-                        <p class="errorMessage" aria-live="polite">Vul de volledige achternaam van de overledene in.</p>
                     </label>
+                    <p class="errorMessage errorHidden" id="err_xx_lastName" aria-live="polite"></p>
+
                 </fieldset>
 
                 <label for="xx_bsn">
                     Bsn overledene
                     <input type="number" id="xx_bsn" name="overledene_bsn" required minlength="9" maxlength="9">
-                    <p class="errorMessage" aria-live="polite">Vul het bsn-nummer van de overledene in</p>
                 </label>
+                <p class="errorMessage errorHidden" id="err_xx_bsn" aria-live="polite"></p>
 
                 <label for="xx_passingDate">
                     Overlijdingsdatum
                     <input type="date" id="xx_passingDate" name="overledene_overlijdingsdatum" required min="2026-01-01"
                         max="2026-12-31">
-                    <p class="errorMessage" aria-live="polite">Vul de overleidingsdatum van de overledene in, deze kan niet in de toekomst zijn.</p>
                 </label>
+                <p class="errorMessage errorHidden" id="err_xx_passingDate" aria-live="polite"></p>
 
             </fieldset>
 
@@ -204,7 +204,8 @@
                         Ja
                     </label>
                     <label for="A_wl_will_false">
-                        <input type="radio" id="A_wl_will_false" class="progressiveRequirement" name="overledene_testament" value="Nee">
+                        <input type="radio" id="A_wl_will_false" class="progressiveRequirement"
+                            name="overledene_testament" value="Nee">
                         Nee
                     </label>
                 </fieldset>
@@ -249,8 +250,8 @@
                     <input type="text" id="Q_wl_date" name="testament_datum" max="2026-12-31" />
                 </label>
 
-
             </fieldset>
+
 
 
             <button type="submit">Formulier verzenden</button>

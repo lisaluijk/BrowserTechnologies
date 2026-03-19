@@ -1,0 +1,19 @@
+#identification_authorized label:has(input) {
+    display: none;
+}
+
+
+/* https://stackoverflow.com/questions/16344583/style-select-element-based-on-selected-option */
+
+#identification_authorized:has(option[value="bsn"]:checked) label[for="au_bsn"]{
+  display: flex;
+}
+
+#identification_authorized:has(option[value="becon"]:checked) label[for="au_beconNumber"]{
+  display: flex;
+}
+
+#identification_authorized:has(option[value="protocol"]:checked) label[for="au_protocolNumber"]{
+  display: flex;
+}
+

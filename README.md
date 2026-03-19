@@ -357,16 +357,33 @@ Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel ti
 
 
 <details>
-### Dinsdag 17 maart | checkout met: __
+### Dinsdag 17 maart | checkout met: Justin
 
 #### Wat heb ik vandaag gedaan?
 - 950 - eisen opdracht dooegenomen
-1000 - 
+1000 - vragen aan victor over die errors
+1030 alle p eruit halen in html en js aanpassen
+1100 vragen aan victor hoe ik id's kan ophalen
+1110 vraag toepassen en helemaal uitgewerkttt
+1130 1140 checken bij victor
+1150 onderzoek voor afbeelding
+1200-1300 pauze 
+1400-1500 css
+2050-21-30 basic pattern toegevoegd 1 van de drie
+2130 styling progressive disclosure
+2145 remove chosen data js
+
 
 
 
 #### Gebruikte bronnen
+- https://stackoverflow.com/questions/16344583/style-select-element-based-on-selected-option
+-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+- https://stackoverflow.com/questions/16344583/style-select-element-based-on-selected-option
+- https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
 - 
+-
 
 
 #### Wat heb ik geleerd?
@@ -385,6 +402,9 @@ Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel ti
 
 
 </details>
+
+19 maart
+ 2216 randvoorwaarden doornemen
 
 
 
