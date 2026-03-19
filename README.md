@@ -305,6 +305,8 @@ Als ik terugkijk op wat ik vandaag heb gedaan ben ik niet onwijs tevreden. Ik me
 </details>
 
 <details>
+<summary>Dag 5</summary>
+
 ### Dinsdag 10 maart | checkout met: Kelly
 
 #### Wat heb ik vandaag gedaan?
@@ -355,8 +357,9 @@ Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel ti
 - dan ook nog progressbar erbij
 - idk 
 
-
 <details>
+<summary>Dag 5</summary>
+
 ### Dinsdag 17 maart | checkout met: Justin
 
 #### Wat heb ik vandaag gedaan?
@@ -383,29 +386,9 @@ Vandaag ging op zich wel redelijk. Ik denk dat een van de dingen die mij veel ti
 - https://stackoverflow.com/questions/16344583/style-select-element-based-on-selected-option
 - https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset
 - 
--
-
-
-#### Wat heb ik geleerd?
-- 
-
-#### Wat ga ik volgende keer doen?
-- 
-
-#### Welke afwegingen heb ik genomen en waar heb ik over na gedacht
-
-- 
-
-
-#### Kleine reflectie van vandaag
-
 
 
 </details>
-
-19 maart
- 2216 randvoorwaarden doornemen
-
 
 
 <details>

@@ -87,10 +87,8 @@
 
 
     /* shadows */
-    --shadow-elevated-1: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
-    --shadow-elevated-2: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
-
-
+    --shadow-elevated-1: 0px 1px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    --shadow-elevated-2: 0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
 
     /* MARK: padding and margin */
 
@@ -161,8 +159,6 @@
     --typography-weight-normal: 400;
     --typography-weight-medium: 500;
     --typography-weight-bold: 700;
-
-
 }
 
 
@@ -217,7 +213,6 @@
     font-style: normal;
 }
 
-
 /* MARK: Basic styling */
 
 /* reset */
@@ -230,7 +225,6 @@
     /* list-style-type: none; */
 }
 
-
 /* styling typography */
 * {
     font-family: "nsSans", Arial, Helvetica, sans-serif;
@@ -239,7 +233,6 @@
     line-height: var(--typography-line-height-l);
     padding: var(--spacing-inset-s);
     font-weight: var(--typography-weight-normal);
-
 }
 
 body {
@@ -331,7 +324,6 @@ h6 {
 }
 
 /* MARK: other elements */
-
 button {
     /* background-color: var(--color-background-brand-primary); */
     /* color: var(--color-content-emphasis); */
@@ -358,6 +350,7 @@ button:active {
 form {
     box-shadow: var(--shadow-elevated-1);
     background: var(--color-background-elevated-1);
+    border: var(--border-width-thin) solid var(--color-background-elevated-sunken);
 
     border-radius: var(--border-radius-l);
     margin: var(--spacing-inset-l) var(--spacing-inset-m);
@@ -372,6 +365,8 @@ fieldset {
 form>fieldset {
     background: var(--color-background-elevated-2);
     box-shadow: var(--shadow-elevated-2);
+    border: var(--border-width-thin) solid var(--color-background-elevated-sunken);
+
 }
 
 
@@ -385,16 +380,9 @@ label {
 }
 
 
-
-
-
-
-
 /* input[type="number"] {
     box-shadow: 8px -1px 0 -6px var(--color-content-input-default), 1px 0 0 var(--color-content-input-default);
 } */
-
-
 
 input {
     border: solid;
@@ -416,11 +404,7 @@ input {
     &:user-invalid {
         border-color: var(--color-content-error);
         border-width: var(--border-width-medium);
-
-
     }
-
-
 
     /* transition: 0.5s; */
 }
@@ -463,7 +447,6 @@ label:has(input[type="radio"]) {
 
     flex-grow: 1;
     max-width: 15rem;
-
 
     &:hover {
         border-color: var(--color-content-input-hover);
@@ -512,14 +495,9 @@ label:has(input[type="radio"]) {
  } */
 
 
-
-
-
 fieldset {
     margin: 1rem;
 }
-
-
 
 
 .warning {
@@ -533,32 +511,14 @@ fieldset {
 
 /* MARK: Progressive disclosure. */
 
-
-/* hier gebleven :') */
 form fieldset.isProgressive fieldset:has(.progressiveRequirement:checked)~* {
-    /* box-shadow: 0 0 0 3px hotpink; */
 
-    & > * {
+    &>* {
         color: var(--color-content-placeholder);
-       
     }
 
-    & label:has(input[type="radio"]){
+    & label:has(input[type="radio"]) {
         border-width: var(--border-width-thin);
         border-color: var(--color-content-input-default);
     }
-
 }
-
-/* input[type] {
-     border: solid 3px hotpink;
-    background: blue; 
-    box-shadow: 0 0 0 3px hotpink;
-
-} */
-
-
-
-/* form > fieldset > fieldset{
-    background: orange;
-} */
